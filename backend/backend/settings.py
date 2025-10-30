@@ -74,10 +74,8 @@ TEMPLATES = [
 WSGI_APPLICATION = 'backend.wsgi.application'
 
 CORS_ALLOWED_ORIGINS = [
+    "https://elearn2-rtgj.vercel.app/",
     "http://localhost:3000",
-    "http://192.168.1.115:3000",
-    "https://apex26.mn",
-    "https://www.apex26.mn",
 ]
 
 # Database
