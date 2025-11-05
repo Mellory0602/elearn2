@@ -2,4 +2,4 @@ django
 psycopg2
 django-cors-headers
 djangorestframework
-djangorestframework-simplejw
+djangorestframework-simplejwt
