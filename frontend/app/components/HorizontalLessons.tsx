@@ -32,10 +32,12 @@ export default function HorizontalLessons() {
 
 
   const openPdf = (pdfUrl?: string) => {
-    if (!pdfUrl) return;
-    const url = pdfUrl.startsWith("http") ? pdfUrl : `${process.env.NEXT_PUBLIC_API_URL}${pdfUrl}`;
-    window.open(url, "_blank");
-  };
+  if (!pdfUrl) return;
+  const url = pdfUrl.startsWith("http") 
+              ? pdfUrl 
+              : `${process.env.NEXT_PUBLIC_API_URL}${pdfUrl}`;
+  window.open(url, "_blank");
+};
 
   return (
     <div className="px-5 pt-20 pb-5">
