@@ -29,7 +29,6 @@ export default function AdminPage() {
     if (!title || !document) return;
     const formData = new FormData();
     formData.append("title", title);
-    formData.append("description", description);
     formData.append("document", document);
 
     await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/documents/`, {
